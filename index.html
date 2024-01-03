@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css"/>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Autism Kosovo" width="70"/>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="">Ballina</a></li>
+                <li><a href="">Autism Kosovo</a></li>
+                <li><a href="">Blogu</a></li>
+                <li><a href="">Rreth Nesh</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <a href="#">Qka është autizmi?</a>
+        </div>
+    </div>
+</header>
+<section id="hero">
+    <div class="container">
+        <div class="hero">
+            <div class="container2">  
+                <form id="contact" action="" method="post">
+                  <h3>Dhuroni</h3>
+                  <h4>Dhuroni për fëmijët me autizëm.</h4>
+                  <fieldset>
+                    <input placeholder="Emri & Mbiemri" id="emri" type="text" tabindex="1" required autofocus>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Emaili" id="email" type="email" tabindex="2" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Numri i telefonit" id="telefoni" type="tel" tabindex="3" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Shtypni shumën" type="number" id="shuma" tabindex="4" required>
+                  </fieldset>
+                  <fieldset>
+                    
+                    <button type="submit" name="submit" id="contact-submit" onclick="submitDonation()">Dhuro</button>
+                  </fieldset>
+                </form> 
+              </div>
+        </div>
+    </div>
+</section>
+<section id="informacion">
+    <div class="container">
+        <div class="about">
+            <div class="about-img">
+                <img src="assets/images/rrethnesh.jpg" width="500" alt="Rreth nesh"/>
+            </div>
+            <div class="about-info">
+                <h1>Autism Kosovo</h1><br>
+                <p>Autizmi është çrregullim neurobiologjik që veçohet me vështirësi në komunikim, ndërveprimi shoqëror dhe sjellje të përsëritura dhe rreze të kufizuar interesash.<br><br>
+                Sipas DSM-IV-R Autizmi përkufizohet si një çrregullim që karakterizohet nga:<br>
+                <ul>
+                    <li>Dëmtim cilësor i marrëdhënieve sociale</li>
+                    <li>Dëmtim cilësor i komunikimit</li>
+                    <li>Karakter të kufizuar dhe stereotipik të sjelljes</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="partneret">
+    <div class="container">
+        <div class="titulli">
+            <h2>Mbështetësit tanë kryesorë</h2>
+        </div>
+        <div class="partneret">
+            <div class="lista1">
+                <img src="assets/images/partneret/elkos.jpg" width="130" alt="">
+                <img src="assets/images/partneret/jumbo.svg" width="130" alt="">
+                <img src="assets/images/partneret/plus.png" width="130" alt="">
+                <img src="assets/images/partneret/sweeden.jpeg" width="130" alt="">
+                <img src="assets/images/partneret/usa.jpg" width="130" alt="">
+                <img src="assets/images/partneret/viva.png" width="130" alt="">
+            </div>
+            <div class="lista2">
+                <img src="assets/images/partneret/l2-1.png" width="130" alt="">
+                <img src="assets/images/partneret/l2-2.png" width="130" alt="">
+                <img src="assets/images/partneret/l2-3.png" width="130" alt="">
+                <img src="assets/images/partneret/l2-4.png" width="130" alt="">
+                <img src="assets/images/partneret/l2-5.png" width="130" alt="">
+                <img src="assets/images/partneret/l2-6.png" width="130" alt="">
+            </div>
+        </div>
+    </div> 
+</section>
+<footer>
+    <div class="container">
+        <div class="footer">
+            <div class="fot1">
+                <p>Autism Kosovo është një organizatë bamirësie jofitimprurëse e përkushtuar në mbështetjen dhe zhvillimin e fëmijëve me spektrin autistik</p>
+            </div>
+            <div class="fot2">
+                <ul>
+                    <li class="li-active">Linqet tjera</li>
+                    <li><a href="#">Child Mind Institute</a></li>
+                    <li><a href="#">Kennedy Krieger Institute</a></li>
+                    <li><a href="#">Jewel Autism</a></li>
+                </ul>
+            </div>
+            <div class="fot3">
+                <ul>
+                    <li class="li-active">Na kontaktoni</li>
+                    <li><i class="fa-solid fa-square-phone-flip" style="color: #ffffff;"></i> +383 45 818 456</li>
+                    <li><i class="fa-solid fa-square-envelope" style="color: #ffffff;"></i> info@autismkosovo.com</li>
+                    <li><i class="fa-solid fa-fax" style="color: #ffffff;"></i> 888 555 444</li>
+                </ul>
+            </div>
+            <div class="fot4">
+                <ul>
+                    <li class="li-active">Adresa jonë</li>
+                    <li><i class="fa-solid fa-street-view" style="color: #ffffff;"></i> Rruga Adem Jashari 70</li>
+                    <li><i class="fa-solid fa-city" style="color: #ffffff;"></i> Hani i Elezit, Ferizaj</li>
+                    <li><i class="fa-solid fa-earth-europe" style="color: #ffffff;"></i> 71510, Kosovë</li>
+                </ul>
+            </div>
+        </div>
+        <div class="end-footer">
+            <p>Copyright &copy; 2024. AUTISM KOSOVO.</p>
+            <a href="/donations.html"><i class="fa-brands fa-cpanel fa-2xl" style="color: #ffffff;"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/script.js"></script>
+</body>
+</html>

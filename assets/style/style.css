@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+section, footer {
+  padding: 60px 0px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+header {
+  background-color: #F9F9F9;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .nav ul {
+  list-style: none;
+}
+header .container .nav ul li {
+  display: inline;
+  padding: 0px 20px;
+}
+header .container .nav ul li a {
+  color: rgb(84, 84, 84);
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header .container .nav ul li a:hover {
+  color: rgb(11, 161, 73);
+}
+header .container .login a {
+  background-color: rgb(11, 161, 73);
+  color: white;
+  border-radius: 10px;
+  padding: 10px 40px;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+header .container .login a:hover {
+  background-color: rgb(16, 108, 55);
+}
+
+#hero {
+  background: url(/assets/images/wall.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#hero .container .hero {
+  height: 520px;
+}
+#hero .container .hero .container2 {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+#hero .container .hero #contact input[type=text], #hero .container .hero #contact input[type=email], #hero .container .hero #contact input[type=tel], #hero .container .hero #contact input[type=number], #hero .container .hero #contact textarea, #hero .container .hero #contact button[type=submit] {
+  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+#hero .container .hero #contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 50px 0;
+}
+#hero .container .hero #contact h3 {
+  color: rgb(11, 161, 73);
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+#hero .container .hero #contact h4 {
+  margin: 5px 0 15px;
+  text-align: center;
+  display: block;
+  font-size: 13px;
+}
+#hero .container .hero fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+#hero .container .hero #contact input[type=text], #hero .container .hero #contact input[type=email], #hero .container .hero #contact input[type=tel], #hero .container .hero #contact input[type=number], #hero .container .hero #contact textarea {
+  width: 100%;
+  border: 1px solid #CCC;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+#hero .container .hero #contact input[type=text]:hover, #hero .container .hero #contact input[type=email]:hover, #hero .container .hero #contact input[type=tel]:hover, #hero .container .hero #contact input[type=number]:hover, #hero .container .hero #contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #AAA;
+}
+#hero .container .hero #contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+#hero .container .hero #contact button[type=submit] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #0BA149;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+#hero .container .hero #contact button[type=submit]:hover {
+  background: #0e6b35;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+#hero .container .hero #contact button[type=submit]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+#hero .container .hero #contact input:focus, #hero .container .hero #contact textarea:focus {
+  outline: 0;
+  border: 1px solid #999;
+}
+#hero .container .hero ::-webkit-input-placeholder {
+  color: #888;
+}
+#hero .container .hero :-moz-placeholder {
+  color: #888;
+}
+#hero .container .hero ::-moz-placeholder {
+  color: #888;
+}
+#hero .container .hero :-ms-input-placeholder {
+  color: #888;
+}
+
+#informacion {
+  background-color: #F3F1F0;
+}
+#informacion .container .about {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+#informacion .container .about-img img {
+  border-radius: 10px;
+}
+#informacion .container .about-info h1 {
+  font-size: 40px;
+  color: #0BA149;
+  text-decoration: underline black;
+}
+#informacion .container .about-info p {
+  font-size: 16px;
+}
+#informacion .container .about-info ul {
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+#partneret .container .titulli h2 {
+  font-size: 35px;
+  text-align: center;
+  color: #0BA149;
+  text-decoration: underline black;
+}
+#partneret .container .partneret {
+  padding-top: 40px;
+}
+#partneret .container .partneret .lista1, #partneret .container .partneret .lista2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  background-color: #303133;
+}
+footer .container .footer {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+footer .container .footer .fot1 p {
+  color: #fff;
+}
+footer .container .footer .fot2 ul {
+  list-style: none;
+}
+footer .container .footer .fot2 ul li {
+  color: white;
+  padding: 5px 0px;
+}
+footer .container .footer .fot2 ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .container .footer .fot2 ul li a:hover {
+  color: #0BA149;
+}
+footer .container .footer .fot3 ul {
+  list-style: none;
+}
+footer .container .footer .fot3 ul li {
+  color: white;
+  padding: 5px 0px;
+}
+footer .container .footer .fot4 ul {
+  list-style: none;
+}
+footer .container .footer .fot4 ul li {
+  color: white;
+  padding: 5px 0px;
+}
+footer .container .end-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .end-footer p {
+  padding-top: 30px;
+  color: white;
+  text-align: center;
+}
+footer .container .end-footer a {
+  font-size: 20px;
+  transition: ease-out 2s;
+}
+footer .container .end-footer a:hover {
+  background-color: #0BA149;
+  border-radius: 5px;
+  padding: 0px 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    width: 1120px;
+  }
+}/*# sourceMappingURL=style.css.map */

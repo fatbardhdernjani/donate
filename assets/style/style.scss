@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+section, footer {
+    padding: 60px 0px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+header {
+    background-color: #F9F9F9;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .nav {
+            ul {
+                list-style: none;
+                li {
+                    display: inline;
+                    padding: 0px 20px;
+                    a {
+                        color: rgb(84,84,84);
+                        font-size: 17px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        &:hover {
+                            color: rgb(11,161,73);
+                        }
+                    }
+                }
+            }
+        }
+
+        .login {
+            a {
+                background-color: rgb(11,161,73);
+                color: white;
+                border-radius: 10px;
+                padding: 10px 40px;
+                font-size: 16px;
+                font-weight: 400;
+                text-decoration: none;
+                &:hover {
+                    background-color: rgb(16, 108, 55);
+                }
+            }
+        }
+    }
+}
+
+#hero {
+    background: url(/assets/images/wall.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .container {
+        .hero {
+            height: 520px;
+
+            .container2 {
+                max-width:400px;
+                width:100%;
+                margin:0 auto;
+                opacity: 0.9;
+            }
+            
+            #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="number"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+            
+            #contact {
+                background: #F9F9F9;
+                padding: 25px;
+                margin: 50px 0;
+            }
+            
+            #contact h3 {
+                color: rgb(11,161,73);;
+                display: block;
+                font-size: 30px;
+                font-weight: 400;
+                text-align: center;
+            }
+            
+            #contact h4 {
+                margin:5px 0 15px;
+                text-align: center;
+                display:block;
+                font-size:13px;
+            }
+            
+            fieldset {
+                border: medium none !important;
+                margin: 0 0 10px;
+                min-width: 100%;
+                padding: 0;
+                width: 100%;
+            }
+            
+            #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="number"], #contact textarea {
+                width:100%;
+                border:1px solid #CCC;
+                background:#FFF;
+                margin:0 0 5px;
+                padding:10px;
+            }
+            
+            #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="number"]:hover, #contact textarea:hover {
+                -webkit-transition:border-color 0.3s ease-in-out;
+                -moz-transition:border-color 0.3s ease-in-out;
+                transition:border-color 0.3s ease-in-out;
+                border:1px solid #AAA;
+            }
+            
+            #contact textarea {
+                height:100px;
+                max-width:100%;
+              resize:none;
+            }
+            
+            #contact button[type="submit"] {
+                cursor:pointer;
+                width:100%;
+                border:none;
+                background:#0BA149;
+                color:#FFF;
+                margin:0 0 5px;
+                padding:10px;
+                font-size:15px;
+            }
+            
+            #contact button[type="submit"]:hover {
+                background:#0e6b35;
+                -webkit-transition:background 0.3s ease-in-out;
+                -moz-transition:background 0.3s ease-in-out;
+                transition:background-color 0.3s ease-in-out;
+            }
+            
+            #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+            
+            #contact input:focus, #contact textarea:focus {
+                outline:0;
+                border:1px solid #999;
+            }
+            ::-webkit-input-placeholder {
+             color:#888;
+            }
+            :-moz-placeholder {
+             color:#888;
+            }
+            ::-moz-placeholder {
+             color:#888;
+            }
+            :-ms-input-placeholder {
+             color:#888;
+            }
+        }
+    }
+}
+
+#informacion {
+    background-color: #F3F1F0;
+    .container {
+        .about {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+
+        .about-img {
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .about-info {
+            h1 {
+                font-size: 40px;
+                color:#0BA149;
+                text-decoration: underline black;
+            }
+            
+            p {
+                font-size: 16px;
+            }
+
+            ul {
+                padding-left: 30px;
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+#partneret {
+    .container {
+        .titulli {
+            h2 {
+                font-size: 35px;
+                text-align: center;
+                color:#0BA149;
+                text-decoration: underline black;
+            }
+        }
+        .partneret {
+            padding-top: 40px;
+            .lista1, .lista2 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+}
+
+footer {
+    background-color:#303133;
+    .container {
+        .footer {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(4, 1fr);
+
+            .fot1 {
+                p {
+                    color: #fff;
+                }
+            }
+
+            .fot2 {
+                ul {
+                    list-style: none;
+                    li {
+                        color: white;   
+                        padding: 5px 0px;              
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            &:hover {
+                                color:#0BA149;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .fot3 {
+                ul {
+                    list-style: none;
+                    li {
+                        color: white;
+                        padding: 5px 0px;
+                    }
+                }
+            }
+
+            .fot4 {
+                ul {
+                    list-style: none;
+                    li {
+                        color: white;
+                        padding: 5px 0px;
+                    }
+                }
+            }
+        }
+
+        .end-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                padding-top: 30px;
+                color: white;
+                text-align: center;
+            }
+            a {
+                font-size: 20px;
+                transition: ease-out 2s;
+                &:hover {
+                    background-color:#0BA149;
+                    border-radius: 5px;
+                    padding: 0px 20px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 800px) {
+    .container {
+      width: 1120px;
+    }
+}
