@@ -43,3 +43,17 @@ form {
 label {
     font-weight: bold;
 }
+
+footer {
+    background-color:#0BA149;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+}

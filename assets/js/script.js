@@ -16,9 +16,10 @@ function submitDonation() {
     // Ruaj të dhënat në localStorage ose mund t'i dërgoni përmes një API
     saveDonation(dhurues);
 
-    // Trego mesazhin falenderues
-    alert("Faleminderit për dhurimin tuaj, " + emri + "!");
-    // Mund të shtoni përcjellësime ose redirektoni në faqen e dytë
+    // Ndrysho pamjen e butonit dhe shto animacionet
+    var donationButton = document.getElementById("donationButton");
+    donationButton.innerHTML = "Faleminderit për donacionin!";
+    donationButton.classList.add("donated");
 }
 
 function saveDonation(dhurues) {
