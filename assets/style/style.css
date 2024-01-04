@@ -117,7 +117,7 @@ header .container .login a:hover {
   max-width: 100%;
   resize: none;
 }
-#hero .container .hero #contact button[type=submit] {
+#hero .container .hero #contact button[type=button] {
   cursor: pointer;
   width: 100%;
   border: none;
@@ -127,13 +127,13 @@ header .container .login a:hover {
   padding: 10px;
   font-size: 15px;
 }
-#hero .container .hero #contact button[type=submit]:hover {
+#hero .container .hero #contact button[type=button]:hover {
   background: #0e6b35;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
-#hero .container .hero #contact button[type=submit]:active {
+#hero .container .hero #contact button[type=button]:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 #hero .container .hero #contact input:focus, #hero .container .hero #contact textarea:focus {

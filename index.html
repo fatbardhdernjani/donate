@@ -34,7 +34,7 @@
     <div class="container">
         <div class="hero">
             <div class="container2">  
-                <form id="contact" action="" method="post">
+                <form id="contact" action="/index.html" method="post">
                   <h3>Dhuroni</h3>
                   <h4>"Dashuria Ndaj Dritës: Ndihmojmë Fëmijët me Autizëm të Shkëlqejnë!"</h4>
                   <fieldset>
@@ -50,17 +50,10 @@
                     <input placeholder="Shtypni shumën" type="number" id="shuma" tabindex="4" required>
                   </fieldset>
                   <fieldset>
-                    <button id="donationButton" type="submit" onclick="submitDonation()">Dhuro</button>
+                    <button id="donationButton" type="button" onclick="submitDonation()">Dhuro</button>
                   </fieldset>
-                </form> 
-                <div id="modal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal()"></span>
-                        <p id="thankYouMessage"></p>
-                    </div>
-                </div>
-            </div>
-            
+                </form>
+            </div>     
         </div>
     </div>
 </section>
