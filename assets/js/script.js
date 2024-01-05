@@ -1,11 +1,10 @@
 function submitDonation() {
-    // Merr vlerat nga formulari
+
     var emri = document.getElementById("emri").value;
     var telefoni = document.getElementById("telefoni").value;
     var email = document.getElementById("email").value;
     var shuma = document.getElementById("shuma").value;
 
-    // Krijo një objekt me të dhënat e dhuruesit
     var dhurues = {
         emri: emri,
         telefoni: telefoni,
@@ -13,22 +12,18 @@ function submitDonation() {
         shuma: shuma
     };
 
-    // Ruaj të dhënat në localStorage ose mund t'i dërgoni përmes një API
     saveDonation(dhurues);
 
-    // Ndrysho pamjen e butonit dhe shto animacionet
     var donationButton = document.getElementById("donationButton");
     donationButton.innerHTML = "Faleminderit për donacionin!";
     donationButton.classList.add("donated");
 }
 
 function saveDonation(dhurues) {
-    // Merr të dhënat e dhurimeve të mëparshme nga localStorage (nëse ka)
+
     var dhurimeTeMeparshme = JSON.parse(localStorage.getItem("dhurime")) || [];
 
-    // Shto të dhënën e re në listën e dhurimeve
     dhurimeTeMeparshme.push(dhurues);
 
-    // Ruaj listën e re të dhurimeve në localStorage
     localStorage.setItem("dhurime", JSON.stringify(dhurimeTeMeparshme));
 }
