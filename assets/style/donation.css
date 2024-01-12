@@ -22,6 +22,24 @@ header {
                 text-decoration: none;                
             }
         }
+
+        .right-header2 {
+            .log-out {
+                background-color: rgb(246, 246, 246);
+                padding: 15px 30px;
+                border: none;
+                border-radius: 10px;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: ease-in-out 0.7s;
+
+                &:hover {
+                    background-color:rgb(196, 40, 40);
+                    color: white;
+                }
+            }
+        }
     }
     
 }
@@ -42,4 +60,21 @@ form {
 
 label {
     font-weight: bold;
+}
+
+.container {
+    button {
+        color: white;
+        background-color:#0BA149;
+        border: none;
+        border-radius: 10px;
+        padding: 12px 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        
+        &:hover {
+            background-color:#0b5f20;
+        }
+    }
 }

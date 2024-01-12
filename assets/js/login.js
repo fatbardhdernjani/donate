@@ -1,16 +1,17 @@
 function validateLogin() {
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
 
-    if (!username || !password) {
-      alert('Ju lutem shtypni përdoruesin dhe fjalëkalimin.');
-      return;
-    }
+  var validUsername = "fatbardh";
+  var validPassword = "fatbardh12";
 
-    if (username === 'fatbardh' && password === 'fatbardh12') {
+  if (username === validUsername && password === validPassword) {
+      var nextPage = "donations.html";
 
-      window.location.href = 'donations.html';
-    } else {
-      alerdocument.write('Përdoruesi ose fjalëkalimi është gabim, provoni përsëri!');
-    }
+      sessionStorage.setItem("isLoggedIn", "true");
+      
+      window.location.href = nextPage;
+  } else {
+      document.getElementById("loginResult").innerHTML = "Wrong username or password, please try again.";
   }
+}
